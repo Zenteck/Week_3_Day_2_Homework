@@ -40,7 +40,7 @@ Extension Questions
 Look at the find_by_id and find_by_address methods in the Property class.
 
 Q10. What do they take in as their arguments?
-Whatever argument is given is converted to a string if it isn't already, as this is how SQL reads it.
+Whatever argument is given is converted to a string if it isn't already, as this is how SQL reads it. 
 
 Q11. What are their return values?
 They return an array containing every property of the object, including its memory hash.

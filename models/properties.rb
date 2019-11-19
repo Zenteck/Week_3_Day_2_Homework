@@ -73,7 +73,7 @@ class Property
     sql = "SELECT * FROM property_tracker WHERE address = $1;"
     values = [address]
     db.prepare("find", sql)
-    properties = db.exec_prepared("find", values)
+    properties = db.exec_prepared("find_by_address", values)
     db.close()
     result = properties.map{|property| Property.new(property)}
       if result == []
